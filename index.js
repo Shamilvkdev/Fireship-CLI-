@@ -71,9 +71,17 @@ async function handleAnswer(isCorrect) {
     }
 }
 
+function winner() {
+    console.clear();
+    const msg = `Congrats, ${playerName} !\n $ 1, 0 0 0, 0 0 0`;
 
+    figlet(msg, (err, data) => {
+        console.log(gradient.pastel.multiline(data));
+    });
+}
 
 
 // await welcome()
 // await askname()
-await question1();
+// await question1();
+await winner()
