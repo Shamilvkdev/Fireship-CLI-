@@ -105,7 +105,7 @@ async function question2() {
         'object',
       ],
     });
-    
+
     return handleAnswer(answers.question_4 === 'object');
   }
   
@@ -135,7 +135,7 @@ function winner() {
 console.clear();
 await welcome()
 await askname()
-// await question1();
+await question1();
 await question2();
 await question3();
 await question4();
