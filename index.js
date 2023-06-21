@@ -36,7 +36,7 @@ async function handleAnswer(isCorrect) {
         });
     } else {
         spinner.error({ 
-            text: `GAME OVER mwonuse...., you have failed ${playerName}!`
+            text: `Ded aayalo mwonee...., you have failed ${playerName}!`
          });
          process.exit(1);
     }
@@ -68,7 +68,7 @@ async function question1() {
         ],
     });
 
-    return handleAnswer(answer.question_1);
+    return handleAnswer(answers.question_1 === 'Dec 4th, 1995');
 }
 
 async function question2() {
@@ -101,7 +101,7 @@ async function question2() {
         'boolean',
         'number',
         'null',
-        'object', // Correct
+        'object',
       ],
     });
     return handleAnswer(answers.question_4 === 'object');
@@ -133,7 +133,7 @@ function winner() {
 console.clear();
 await welcome()
 await askname()
-await question1();
+// await question1();
 await question2();
 await question3();
 await question4();
