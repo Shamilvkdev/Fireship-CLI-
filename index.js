@@ -78,6 +78,7 @@ async function question2() {
       message: 'What is x? var x = 1_1 + "1" + Number(1)\n',
       choices: ['4', '"4"', '"1111"', '69420'],
     });
+
     return handleAnswer(answers.question_2 === '"1111"');
   }
   
@@ -104,6 +105,7 @@ async function question2() {
         'object',
       ],
     });
+    
     return handleAnswer(answers.question_4 === 'object');
   }
   
