@@ -7,7 +7,7 @@ import { createSpinner } from "nanospinner";
 
 let playerName;
 
-const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
+const sleep = (ms = 3000) => new Promise((r) => setTimeout(r, ms));
 
 async function welcome() {
     const rainbowTitle = chalkAnimation.rainbow(
@@ -19,10 +19,9 @@ async function welcome() {
 
     console.log(`
         ${chalk.bgCyanBright('HOW TO START')}
-        I am but a conscience.
+        I am but a Conscience.
         If you get any Tasks wrong I will be ${chalk.bgRedBright('Killed')}
         so get all of them Right...
-
     `);
 }
 
