@@ -31,11 +31,11 @@ async function handleAnswer(isCorrect) {
 
     if (isCorrect) {
         spinner.success({ 
-            text: `${playerName} oru killadi thanne... 🔥🔥🔥` 
+            text: ` ${playerName} oru killadi thanne... 🔥🔥🔥` 
         });
     } else {
         spinner.error({ 
-            text: `ded aayi 💀 💀 💀 ${playerName}!`
+            text: ` ${playerName} ded aayi 💀 💀 💀 !`
          });
          process.exit(1);
     }
@@ -45,7 +45,7 @@ async function askname() {
     const answers = await inquirer.prompt({
         name: 'player_name',
         type: 'input',
-        message: 'What is your name?',
+        message: 'Ninte name entha?',
         default() {
             return 'Player';
         },
