@@ -31,11 +31,11 @@ async function handleAnswer(isCorrect) {
 
     if (isCorrect) {
         spinner.success({ 
-            text: `Nice work ${playerName}. That's the legit one.` 
+            text: `${playerName} oru killadi thanne... 🔥🔥🔥` 
         });
     } else {
         spinner.error({ 
-            text: `Ded aayalo mwonee...., you have failed ${playerName}!`
+            text: `ded aayi 💀 💀 💀 ${playerName}!`
          });
          process.exit(1);
     }
