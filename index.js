@@ -113,13 +113,11 @@ async function question2() {
       name: 'question_5',
       type: 'list',
       message:
-        'JS is a high-level single-threaded, garbage-collected,\n' +
-        'interpreted(or just-in-time compiled), prototype-based,\n' +
-        'multi-paradigm, dynamic language with a ____ event loop\n',
-      choices: ['multi-threaded', 'non-blocking', 'synchronous', 'promise-based'],
+        'Which Engine is used to run NodeJS ? \n',
+      choices: ['Nashorn', 'JavaScriptCore', 'Chrome V8', 'SpiderMonkey'],
     });
   
-    return handleAnswer(answers.question_5 === 'non-blocking');
+    return handleAnswer(answers.question_5 === 'Chrome V8');
   }
 
 function winner() {
