@@ -11,7 +11,7 @@ const sleep = (ms = 3000) => new Promise((r) => setTimeout(r, ms));
 
 async function welcome() {
     const rainbowTitle = chalkAnimation.rainbow(
-        'Do You Want To Be a Developer? \n' 
+        'Konnichiwaa....Do You Want To Be a Developer? \n' 
     );
 
     await sleep();
@@ -85,8 +85,8 @@ async function question2() {
     const answers = await inquirer.prompt({
       name: 'question_3',
       type: 'list',
-      message: `What is the first element in the array? ['🐏', '🦙', '🐍'].length = 0\n`,
-      choices: ['0', '🐏', '🐍', 'undefined'],
+      message: `Is JavaScript Synchronous or Non-Synchronous ?\n`,
+      choices: ['Synchronous', 'Non-Synchronous'],
     });
   
     return handleAnswer(answers.question_3 === 'undefined');
