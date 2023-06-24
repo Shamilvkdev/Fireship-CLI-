@@ -58,7 +58,7 @@ async function question1() {
     const answers = await inquirer.prompt({
         name: 'question_1',
         type: 'list',
-        message: 'Javascript was created in 10 days then released on\n',
+        message: 'Javascript was released on\n',
         choices: [
             'May 23rd, 1995',
             'Nov 24th, 1995' ,
@@ -100,7 +100,7 @@ async function question2() {
       choices: [
         'boolean',
         'number',
-        'null',
+        'undefined',
         'object',
       ],
     });
