@@ -89,7 +89,7 @@ async function question2() {
       choices: ['Synchronous', 'Non-Synchronous'],
     });
   
-    return handleAnswer(answers.question_3 === 'undefined');
+    return handleAnswer(answers.question_3 === 'Non-Synchronous');
   }
   
   async function question4() {
