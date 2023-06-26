@@ -85,11 +85,11 @@ async function question2() {
     const answers = await inquirer.prompt({
       name: 'question_3',
       type: 'list',
-      message: `Is JavaScript Synchronous or Non-Synchronous ?\n`,
-      choices: ['Synchronous', 'Non-Synchronous'],
+      message: `Is JavaScript Synchronous or Asynchronous ?\n`,
+      choices: ['Synchronous', 'Asynchronous'],
     });
   
-    return handleAnswer(answers.question_3 === 'Non-Synchronous');
+    return handleAnswer(answers.question_3 === 'Asynchronous');
   }
   
   async function question4() {
