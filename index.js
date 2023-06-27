@@ -19,9 +19,9 @@ async function welcome() {
 
     console.log(`
         ${chalk.bgCyanBright('HOW TO START')}
-        I am but a Conscience.
+        This is Test.
         If you get any Tasks wrong I will be ${chalk.bgRedBright('Killed')}
-        so get all of them Right...
+        so get them Right...
     `);
 }
 
