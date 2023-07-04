@@ -19,8 +19,8 @@ async function welcome() {
 
     console.log(`
         ${chalk.bgCyanBright('HOW TO BEGIN')}
-        This is Test.
-        If you get any Tasks wrong I will be ${chalk.bgRedBright('KILLED')}
+        This is a Test.
+        If you get any Tasks wrong the program will be ${chalk.bgRedBright('KILLED')}
         so get them Right...
     `);
 }
