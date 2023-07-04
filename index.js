@@ -26,7 +26,7 @@ async function welcome() {
 }
 
 async function handleAnswer(isCorrect) {
-    const spinner = createSpinner('Checking your Answer...').start();
+    const spinner = createSpinner('Analyzing your Answer...').start();
     await sleep();
 
     if (isCorrect) {
