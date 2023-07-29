@@ -35,7 +35,7 @@ async function handleAnswer(isCorrect) {
         });
     } else {
         spinner.error({ 
-            text: ` ${playerName} ded aayi 💀 💀 💀 !`
+            text: ` ${playerName} ded ho gaya 💀 💀 💀 !`
          });
          process.exit(1);
     }
