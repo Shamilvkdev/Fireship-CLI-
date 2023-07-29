@@ -13,13 +13,12 @@ async function welcome() {
     const rainbowTitle = chalkAnimation.rainbow(
         'Konnichiwaa....Do You Want To Be a Developer? \n' 
     );
-
     await sleep();
     rainbowTitle.stop();
 
     console.log(`
         ${chalk.bgCyanBright('HOW TO BEGIN')}
-        This is a Test.
+        This is a Test of your Abilities.
         If you get any Tasks wrong the program will be ${chalk.bgRedBright('KILLED')}
         so get them Right...
     `);
@@ -30,6 +29,7 @@ async function handleAnswer(isCorrect) {
     await sleep();
 
     if (isCorrect) {
+      
         spinner.success({ 
             text: ` ${playerName} oru killadi thanne... 🔥🔥🔥` 
         });
