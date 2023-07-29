@@ -17,7 +17,7 @@ async function welcome() {
     rainbowTitle.stop();
 
     console.log(`
-        ${chalk.bgCyanBright('HOW TO BEGIN')}
+        ${chalk.bgCyanBright('HOW TO START')}
         This is a Test of your Abilities.
         If you get any Tasks wrong the program will be ${chalk.bgRedBright('KILLED')}
         so get them Right...
