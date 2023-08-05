@@ -45,7 +45,7 @@ async function askname() {
     const answers = await inquirer.prompt({
         name: 'player_name',
         type: 'input',
-        message: 'Ninte name para?',
+        message: 'Please enter your name?',
         default() {
             return 'Player';
         },
